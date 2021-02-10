@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>  
+        <meta charset="UTF-8">
+        <title>TP Metéo</title>
+        <!-- la balise pour le fichier de style Css-->
+        <link rel="stylesheet" href="style.css" />
+        <!-- la balise pour le fichier js-->
+        <script src="script.js"></script>
+  </head>
+  <!-- <body onload="showCity()">-->
+  <body onload="showCity()" >
+    <section class=" header">
+          <div>
+              <h1><Span>TP Metéo HTML</Span></h1>
+           </div>
+    </section>
+    <div class="select">
+        <div>
+            <h6> Veillez choisir une ville  </h6>
+        </div>
+        <select onchange=showCity() id="menu" class="MN">
+            <option id="NONE">Selectionnez une ville</option>
+            <option id="LYON"> LYON  </option>
+            <option id="GRENOBLE">GRENOBLE</option>
+            <option id="ROANNE">ROANNE</option>
+       </select>
+    </div>
+    
+    <section class="grille">
+        <div class="container">
+            <div class="ville" id="LYON" >
+                <div class="title">
+                     <h2> <strong> LYON </strong>  </h2>
+                     <img src="noun_sun_cloud_653891.png" alt="Ensoleillé dans l'ensemble"/>
+                </div>   
+                <div class="temps">
+                     <p>5C°, Ensoleillé.</p>
+                 </div>    
+            </div>
+            <div class="ville" id="GRENOBLE" >
+                <div class="title">
+                     <h2> <strong> GRENOBLE </strong>  </h2>
+                     <img src="noun_Partly_Sunny_Cloud_655900.png" alt="Partiellement couvert"/>
+                </div>   
+                <div class="temps">
+                     <p>4C°, Couvert.</p>
+                 </div>    
+            </div><div class="ville" id="ROANNE" >
+                <div class="title" >
+                     <h2> <strong> ROANNE </strong>  </h2>
+                     <img src="noun_clouds_653375.png" alt="Nuageux"/>
+                </div>   
+                <div class="temps">
+                     <p>4C°, Nuageux.</p>
+                 </div>   
+            </div>
+          </div>
+    </section>
+    <section class="bas" >
+        <div class="footer">
+            <h4 > BENAIFA ABDELDJALIL <br> Icones par :
+                <a href="https://thenounproject.com/term/raindrop-cloud/653383/">Linseed Studio, US</a>
+              </h4>
+        </div>
+    </section>
+  </body>
+</html>
